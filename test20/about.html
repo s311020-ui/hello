@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<h2>關於我</h2>
+
+<header>
+  <h2>陳漢庭2</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+        <li><a href="index.html">首頁</a></li>
+        <li><a href="introduce.html">比賽介紹</a></li>
+        <li><a href="about.html">關於我</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <p><img style="width: 30%;" src="4.JPG" alt="AI圖片"></p>
+    <div class="container">
+        <h2>設計者：陳漢庭</h2>
+        <p><strong>班級座號：</strong>電商二20號</p>
+        <p><strong>聯絡方式：</strong>311020@ntsh.ntct.edu.tw</p>
+        <div style="text-align: left; padding: 0 20px;">
+            <h3>本學期學習心得</h3>
+            <p>這學期的網頁設計課程讓我收穫良多。從一開始對程式碼感到陌生，到現在可以來自己設計屬於自己的網站，雖然還是沒有做得很好。</p>
+            <p>在製作這個形象網站的過程中，每次老師再帶著我們做網站時，都必須非常的認真，但最後做出來時，成就感真的滿滿</p>
